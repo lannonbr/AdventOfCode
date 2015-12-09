@@ -1,3 +1,5 @@
+# Day 2 of Advent of Code
+
 def wrapping(l, w, h)
   lw = l * w
   lh = l * h

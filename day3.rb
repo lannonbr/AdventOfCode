@@ -1,3 +1,5 @@
+# Day 3 of Advent of Code
+
 arr = Array.new(4000) { Array.new(4000, 0) }
 
 rposx = 300
