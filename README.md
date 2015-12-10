@@ -5,11 +5,11 @@ Solutions:
 
 Here is a list of days, and languages I implemented them in
 
-| Day | Languages |
-|-----|-----------|
-| 1   | Ruby, Nim |
-| 2   | Ruby      |
-| 3   | Ruby      |
-| 4   | Java      |
-| 5   | Ruby      |
-| 6   | Julia     |
+| Day | Languages | Pt 1 | Pt 2 |
+|-----|-----------|------|------|
+| 1   | Ruby, Nim | X    | X    |
+| 2   | Ruby      | X    | X    |
+| 3   | Ruby      | X    | X    |
+| 4   | Java      | X    | X    |
+| 5   | Ruby      | X    |      |
+| 6   | Julia     | X    | X    |
