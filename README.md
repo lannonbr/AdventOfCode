@@ -19,3 +19,7 @@ Here is a list of days, and languages I implemented them in
 | 4   | Java      | X    | X    |
 | 5   | Ruby      | X    |      |
 | 6   | Julia     | X    | X    |
+| 7   |           |      |      |
+| 8   |           |      |      |
+| 9   |           |      |      |
+| 10  | Ruby      | X    | X    |
