@@ -12,3 +12,4 @@ Here is a list of days, and languages I implemented them in
 | 3   | Ruby      |
 | 4   | Java      |
 | 5   | Ruby      |
+| 6   | Julia     |
