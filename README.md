@@ -1,7 +1,13 @@
 # AdventOfCode
-This is my solutions to the [AdventOfCode](http://adventofcode.com/) event.
+This is my solutions to the [AdventOfCode](http://adventofcode.com/) event. Through this,
+I am trying out different languages as the month goes along in addition to languages I already
+know.
 
-Solutions:
+## List of new Languages
+* Nim
+* Julia
+
+## Solutions:
 
 Here is a list of days, and languages I implemented them in
 
