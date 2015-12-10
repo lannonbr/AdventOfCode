@@ -4,8 +4,8 @@ I am trying out different languages as the month goes along in addition to langu
 know.
 
 ## List of new Languages
-* Nim
-* Julia
+* [Nim](http://nim-lang.org/)
+* [Julia](http://julialang.org/)
 
 ## Solutions:
 
