@@ -45,6 +45,7 @@ people = %w[Alice Bob Carol David Eric Frank George Mallory]
 people.each do |person|
   map[person] = {}
 end
+map["Me"] = {}
 
 input = File.open('input.dat', 'r').readlines
 input.each do |i|
@@ -58,7 +59,15 @@ input.each do |i|
 
 end
 
-10000.times do
+people << "Me"
+
+people.each do |person|
+  map[person]["Me"] = 0 if person != "Me"
+  map["Me"][person] = 0 if person != "Me"
+end
+
+
+50000.times do
   people.shuffle!
   hap = find_hapiness(people, map)
   if hap > top_hap
