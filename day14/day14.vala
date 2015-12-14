@@ -1,4 +1,5 @@
 // This can be compiled with 'valac --pkg gio-2.0 day14.vala -o day14'
+// Day 14 of Advent of Code
 
 public class Deer : Object {
 	
@@ -81,10 +82,6 @@ class Race : Object {
 			error("%s", e.message);
 		}
 
-		foreach(Deer deer in race.deers) {
-			stdout.printf("Deer: %s\n", deer.name);
-		}
-
 		for(int i = 0; i < 2503; i++) {
 			int[] topDeerIdxs = {};
 			int topDistance = 0;
@@ -121,6 +118,7 @@ class Race : Object {
 
 		string topDeer2 = "";
 		int topScore = 0;
+
 		foreach(Deer deer in race.deers) {
 			if(deer.score > topScore) {
 				topDeer2 = deer.name;

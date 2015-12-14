@@ -1,23 +1,4 @@
-# read in people
-# 
-# create a map
-#
-# Alice {
-#   bob: -2
-#   carol: -62
-#   david: 65
-#   eric: 21
-#   frank: -81
-#   george: -4
-#   mallory: -80
-# }
-#
-# set people into array 
-#
-# 0th element and n-1 element in array are next to eachother.
-#
-# calculate total change, if it is highest, set it as highest and shuffle and
-# go again. do for 10,000 times
+# Day 13 of Advent of Code
 def find_hapiness(people, map)
   hap = 0
   new_map = {}
