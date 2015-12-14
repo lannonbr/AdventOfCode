@@ -13,6 +13,7 @@ know.
 Here is a list of days, and languages I implemented them in
 
 Amount of total languages: 5
+
 Amount of new languages: 3
 
 | Day | Languages | Pt 1 | Pt 2 |
