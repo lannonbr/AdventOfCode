@@ -6,10 +6,14 @@ know.
 ## List of new Languages
 * [Nim](http://nim-lang.org/)
 * [Julia](http://julialang.org/)
+* [Vala](https://wiki.gnome.org/Projects/Vala/)
 
 ## Solutions:
 
 Here is a list of days, and languages I implemented them in
+
+Amount of total languages: 5
+Amount of new languages: 3
 
 | Day | Languages | Pt 1 | Pt 2 |
 |-----|-----------|------|------|
@@ -26,3 +30,4 @@ Here is a list of days, and languages I implemented them in
 | 11  | Ruby      | X    | X    |
 | 12  | Ruby      | X    | X    |
 | 13  | Ruby      | X    | X    |
+| 14  | Vala      | X    | X    |
