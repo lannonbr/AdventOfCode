@@ -1,3 +1,4 @@
+# Day 8 of Advent of Code
 stringArray = []
 
 File.open('input.dat', 'r') do |f|
