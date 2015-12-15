@@ -32,3 +32,4 @@ Amount of new languages: 3
 | 12  | Ruby      | X    | X    |
 | 13  | Ruby      | X    | X    |
 | 14  | Vala      | X    | X    |
+| 15  | Ruby      | X    | X    |

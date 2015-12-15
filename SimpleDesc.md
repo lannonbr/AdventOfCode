@@ -16,3 +16,4 @@ Below is a list of a simple description for each day of Advent of Code
 - 12: JSON Sum
 - 13: Dinner table optimization
 - 14: Reindeer Race
+- 15: Make the best cookie
