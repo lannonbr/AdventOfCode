@@ -18,22 +18,6 @@ class Ingredient
 
 end
 
-def rand_split(num, elements)
-  remaining = num
-  result = []
-  elements-1.times do
-    elem = rand(remaining)
-    remaining -= elem
-    result << elem
-  end
-  result << remaining
-  puts result.inject(:+)
-  puts result
-  result << 0
-  result << 0
-  result
-end
-
 def calc(arr, *amounts)
   map = {}
   
