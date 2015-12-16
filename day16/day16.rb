@@ -1,64 +1,68 @@
 # Day 16 of Advent of Code
-mfcsam_result = {
-  children: 3,
-  cats: 7,
-  samoyeds: 2,
-  pomeranians: 3,
-  akitas: 0,
-  goldfish: 5,
-  trees: 3,
-  cars: 2,
-  perfumes: 1
+$mfcsam_result = {
+  children: 3, cats: 7, samoyeds: 2,
+  pomeranians: 3, akitas: 0, goldfish: 5,
+  trees: 3, cars: 2, perfumes: 1
 }
+
+def check(sue, key)
+  doesnt_have_key(sue, key) || check_if_key_exists(sue, key)
+end
+
+def doesnt_have_key(sue, key)
+  !sue.has_key?(key)
+end
+
+def check_if_key_exists(sue, key)
+  check_tree_and_cats(sue, key) || check_pom_and_goldfish(sue, key) || check_other(sue, key)
+end
+
+def check_tree_and_cats(sue, key)
+  [:trees, :cats].include?(key) && sue[key] > $mfcsam_result[key]
+end
+
+def check_pom_and_goldfish(sue, key)
+  [:pomeranians, :goldfish].include?(key) && sue[key] < $mfcsam_result[key]
+end
+
+def check_other(sue, key)
+  sue[key] == $mfcsam_result[key]
+end
+
+def create_sue_map(line)
+  num_regex = /(\d+)/
+
+  current_sue = {}
+  data = line.split /[:|,]/
+  num = num_regex.match(data[0])[0]
+  current_sue[:num] = num
+  data = data[1..-1]
+
+  idx = 0
+  while idx < data.length
+    key = data[idx].strip.to_sym
+    val = num_regex.match(data[idx+1])[0].to_i
+
+    current_sue[key] = val
+    idx += 2
+  end
+
+  current_sue
+end
+
+def print_sues(sues)
+  sues.each {|sue| puts sue.to_s }
+end
 
 input = File.open("input.dat", "r").readlines
 
 sues = []
 
-input.each do |sue|
-  data = sue.split /[:|,]/
-  current_sue = {}
-  num = /(\d+)/.match(data[0])[0]
-  data = data[1..-1]
-
-  idx = 0
-  while idx < data.length
-    key = data[idx].strip
-    val = /(\d+)/.match(data[idx+1])[0]
-    current_sue[key.to_sym] = val.to_i
-    idx += 2
-  end
-
-  current_sue[:num] = num
+input.each do |line|
+  current_sue = create_sue_map(line)
   sues << current_sue
 end
 
+$mfcsam_result.keys.each{|key| sues.select!{|sue| check(sue, key)}} 
 
-keys = mfcsam_result.keys
-i = 0
-while i < keys.size
-  new_sues = []
-  sues.each do |sue|
-    if sue.has_key?(keys[i])
-      if keys[i] == :cats || keys[i] == :trees
-        new_sues << sue if sue[keys[i]] > mfcsam_result[keys[i]]
-      elsif keys[i] == :pomeranians || keys[i] == :goldfish
-        new_sues << sue if sue[keys[i]] < mfcsam_result[keys[i]]
-      else
-       if sue[keys[i]] == mfcsam_result[keys[i]]
-         new_sues << sue
-       end
-      end
-    else
-      new_sues << sue
-    end
-  end
-
-  i += 1
-
-  puts "Number of remaining Sues: #{new_sues.size}"
-  sues = new_sues
-  puts sues.size
-end
-
-sues.each {|sue| puts sue.to_s }
+print_sues(sues)
