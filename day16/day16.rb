@@ -54,14 +54,9 @@ def print_sues(sues)
   sues.each {|sue| puts sue.to_s }
 end
 
-input = File.open("input.dat", "r").readlines
-
 sues = []
 
-input.each do |line|
-  current_sue = create_sue_map(line)
-  sues << current_sue
-end
+File.open("input.dat", "r").readlines.each { |line| sues << create_sue_map(line) }
 
 $mfcsam_result.keys.each{|key| sues.select!{|sue| check(sue, key)}} 
 
