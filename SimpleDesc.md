@@ -17,3 +17,4 @@ Below is a list of a simple description for each day of Advent of Code
 - 13: Dinner table optimization
 - 14: Reindeer Race
 - 15: Make the best cookie
+- 16: 500 Aunt Sues
