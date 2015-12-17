@@ -13,12 +13,7 @@ end
 combinations = array.powerset.select { |ps| ps.inject(:+) == 150 }
 puts combinations.length
 
-min = 1000
-combinations.each do |comb|
-  if comb.length < min
-    min = comb.length
-  end
-end
+min = combinations.min_by { |x| x.length }.length
 
 combinations.select!{ |ps| ps.length == min }
 puts combinations.length
