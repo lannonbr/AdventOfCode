@@ -19,3 +19,6 @@ Below is a list of a simple description for each day of Advent of Code
 - 15: Make the best cookie
 - 16: 500 Aunt Sues
 - 17: Distributing the Nog
+- 18: Santa's Game of Light
+- 19: Rudolph's Medicine
+- 20: Infinite Houses & Elves
