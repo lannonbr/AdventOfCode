@@ -12,7 +12,7 @@ know.
 
 Here is a list of days, and languages I implemented them in
 
-Amount of total languages: 5
+Amount of total languages: 6
 
 Amount of new languages: 3
 
@@ -38,3 +38,6 @@ Amount of new languages: 3
 | 18  | Ruby      | X    | X    |
 | 19  |           |      |      |
 | 20  | C++, Ruby | X    |      |
+| 21  |           |      |      |
+| 22  |           |      |      |
+| 23  | Ruby      | X    | X    |

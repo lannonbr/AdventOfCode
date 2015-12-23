@@ -22,3 +22,6 @@ Below is a list of a simple description for each day of Advent of Code
 - 18: Santa's Game of Light
 - 19: Rudolph's Medicine
 - 20: Infinite Houses & Elves
+- 21: RPG Sim 20XX
+- 22: Wizard Sim 20XX 
+- 23: Jane Marie's Computer 
