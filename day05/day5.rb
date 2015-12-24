@@ -12,13 +12,34 @@ class NiceStrChecker
     
     !bad && double && triple_vowel
   end
+
+  def letter_between
+    /(.).\1/.match(@str)
+  end
+
+  def appear_twice
+    /(..).*\1/.match(@str)
+  end
+
+  def two_nice?
+    letter_between && appear_twice
+  end
 end
 
 total = 0
 
-File.open('nicestr.dat', 'r').readlines.each do |line|
+File.open('nicestr.dat').readlines.each do |line|
   checker = NiceStrChecker.new(line)
   total += 1 if checker.nice?
 end
 
-puts total
+puts "Part 1: #{total}"
+
+total = 0
+
+File.open('nicestr.dat').readlines.each do |line|
+  checker = NiceStrChecker.new(line)
+  total += 1 if checker.two_nice?
+end
+
+puts "Part 2: #{total}"

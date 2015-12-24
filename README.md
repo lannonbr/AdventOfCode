@@ -22,7 +22,7 @@ Amount of new languages: 3
 | 2   | Ruby      | X    | X    |
 | 3   | Ruby      | X    | X    |
 | 4   | Java      | X    | X    |
-| 5   | Ruby      | X    |      |
+| 5   | Ruby      | X    | X    |
 | 6   | Julia     | X    | X    |
 | 7   |           |      |      |
 | 8   | Ruby      | X    | X    |
