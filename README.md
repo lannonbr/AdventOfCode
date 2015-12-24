@@ -36,7 +36,7 @@ Amount of new languages: 3
 | 16  | Ruby      | X    | X    |
 | 17  | Ruby      | X    | X    |
 | 18  | Ruby      | X    | X    |
-| 19  |           |      |      |
+| 19  | Ruby      | X    |      |
 | 20  | C++, Ruby | X    |      |
 | 21  |           |      |      |
 | 22  |           |      |      |
