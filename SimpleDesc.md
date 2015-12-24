@@ -25,3 +25,4 @@ Below is a list of a simple description for each day of Advent of Code
 - 21: RPG Sim 20XX
 - 22: Wizard Sim 20XX 
 - 23: Jane Marie's Computer 
+- 24: Quantum Entanglement
